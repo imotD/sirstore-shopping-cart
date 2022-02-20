@@ -10,14 +10,14 @@
     <v-row class="mb-5">
       <v-col cols="8">
         <v-row>
-          <v-col v-for="i in 6" :key="i" cols="4">
+          <v-col v-for="(product, i) in products" :key="i" cols="4">
             <v-card>
               <v-img
                 height="150"
                 src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
               ></v-img>
 
-              <v-card-title>Cafe Badilico</v-card-title>
+              <v-card-title>{{ product.title }}</v-card-title>
 
               <v-card-text>
                 <v-row align="center" class="mx-0">
@@ -41,7 +41,7 @@
 
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
-                <div class="font-weight-medium">$ 30</div>
+                <div class="font-weight-medium">$ {{ product.price }}</div>
                 <v-spacer></v-spacer>
                 <v-btn color="orange lighten-2" dark> Add to cart </v-btn>
               </v-card-actions>
@@ -55,10 +55,13 @@
 </template>
 
 <script>
+import products from "../db/product.json";
 export default {
   name: "Dashboard",
   data() {
-    return {};
+    return {
+      products,
+    };
   },
 };
 </script>

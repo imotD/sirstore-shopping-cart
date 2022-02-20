@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Pisang",
+    "price": 12
+  },
+  {
+    "id": 2,
+    "title": "Semangka",
+    "price": 13
+  },
+  {
+    "id": 3,
+    "title": "Rambutan",
+    "price": 14
+  },
+  {
+    "id": 4,
+    "title": "Pepaya",
+    "price": 15
+  }
+]
