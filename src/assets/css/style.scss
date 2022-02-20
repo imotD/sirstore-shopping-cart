@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+
+$font-main: "Poppins", sans-serif;
+$orange1: hsl(26, 100%, 55%);
+$orange2: hsl(25, 100%, 94%);
+$blue: hsl(220, 14%, 75%);
+$blackblue: hsl(220, 13%, 13%);
+$darkblue: hsl(219, 9%, 45%);
+$lightblue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: $font-main;
+}
