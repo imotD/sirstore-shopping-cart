@@ -1,10 +1,18 @@
 <template>
-  <div>test</div>
+  <v-container>
+    <Navbar />
+    <Dashboard />
+  </v-container>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar.vue";
+import Dashboard from "@/components/Dashboard.vue";
 export default {
   name: "Home",
-  components: {},
+  components: {
+    Navbar,
+    Dashboard,
+  },
 };
 </script>

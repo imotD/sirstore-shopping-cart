@@ -16,3 +16,8 @@ $white: hsl(0, 0%, 100%);
     box-sizing: border-box;
     font-family: $font-main;
 }
+
+.dashboard {
+    min-height: 100vh;
+    padding-top: 5rem;
+}
