@@ -49,15 +49,21 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col> teset </v-col>
+      <v-col cols="4I">
+        <Cart />
+      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
 import products from "../db/product.json";
+import Cart from "@/components/Cart.vue";
 export default {
   name: "Dashboard",
+  components: {
+    Cart,
+  },
   data() {
     return {
       products,
