@@ -1,8 +1,8 @@
 <template>
-  <v-container>
+  <div>
     <Navbar />
     <Dashboard />
-  </v-container>
+  </div>
 </template>
 
 <script>
