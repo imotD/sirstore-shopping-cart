@@ -1,9 +1,21 @@
 <template>
-  <div>
-    <v-app-bar fixed dark elevate-on-scroll>
+  <v-app-bar class="white navbar" fixed elevate-on-scroll height="85">
+    <v-container class="navbar__br-b">
       <v-toolbar flat>
-        <v-toolbar-title class="font-weight-bold"> Sirstore </v-toolbar-title>
-
+        <v-toolbar-title>
+          <v-img src="../../public/logo.svg"></v-img>
+        </v-toolbar-title>
+        <div class="pl-10">
+          <v-btn
+            v-for="(menu, i) in menus"
+            :key="i"
+            text
+            plain
+            class="text-capitalize font-weight-regular"
+          >
+            {{ menu.title }}
+          </v-btn>
+        </div>
         <v-spacer></v-spacer>
         <v-badge
           v-if="totalQty"
@@ -21,9 +33,15 @@
         <v-btn v-else icon fab flat>
           <v-icon> mdi-cart-variant </v-icon>
         </v-btn>
+
+        <v-btn icon fab class="ml-5">
+          <v-avatar>
+            <img src="../../public/image-avatar.png" alt="John" />
+          </v-avatar>
+        </v-btn>
       </v-toolbar>
-    </v-app-bar>
-  </div>
+    </v-container>
+  </v-app-bar>
 </template>
 
 <script>
@@ -31,7 +49,30 @@ import { mapGetters } from "vuex";
 export default {
   name: "Navbar",
   data() {
-    return {};
+    return {
+      menus: [
+        {
+          title: "collections",
+          link: "",
+        },
+        {
+          title: "men",
+          link: "",
+        },
+        {
+          title: "women",
+          link: "",
+        },
+        {
+          title: "about",
+          link: "",
+        },
+        {
+          title: "contact",
+          link: "",
+        },
+      ],
+    };
   },
   computed: {
     ...mapGetters(["cart"]),

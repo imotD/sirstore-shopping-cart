@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-$font-main: "Poppins", sans-serif;
-$orange1: hsl(26, 100%, 55%);
-$orange2: hsl(25, 100%, 94%);
-$blue: hsl(220, 14%, 75%);
-$blackblue: hsl(220, 13%, 13%);
-$darkblue: hsl(219, 9%, 45%);
-$lightblue: hsl(223, 64%, 98%);
+// - Mobile: 375px
+// - Desktop: 1440px
+$font-main: "Kumbh Sans", sans-serif;
+// Primary
+$orange: hsl(26, 100%, 55%);
+$orange-pale: hsl(25, 100%, 94%);
+// Neutral
+$blue-dark1: hsl(220, 13%, 13%);
+$grey-dark1: hsl(219, 9%, 45%);
+$grayish: hsl(220, 14%, 75%);
+$grayish-light: hsl(223, 64%, 98%);
+$black: hsla(0, 0%, 0%, 0.165);
 $white: hsl(0, 0%, 100%);
 
 * {
@@ -15,6 +20,12 @@ $white: hsl(0, 0%, 100%);
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: $font-main;
+}
+
+.navbar {
+    &__br-b {
+        border-bottom: 1px solid $black !important;
+    }
 }
 
 .dashboard {
