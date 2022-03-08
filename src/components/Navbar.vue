@@ -30,7 +30,7 @@
           </v-btn>
         </v-badge>
 
-        <v-btn v-else icon fab flat>
+        <v-btn v-else icon fab>
           <v-icon> mdi-cart-variant </v-icon>
         </v-btn>
 
