@@ -3,7 +3,7 @@
     <v-container class="navbar__br-b">
       <v-toolbar flat>
         <v-toolbar-title>
-          <v-img src="../../public/logo.svg"></v-img>
+          <v-img src="../assets/image/logo.svg"></v-img>
         </v-toolbar-title>
         <div class="pl-10">
           <v-btn
@@ -36,7 +36,7 @@
 
         <v-btn icon fab class="ml-5">
           <v-avatar>
-            <img src="../../public/image-avatar.png" alt="John" />
+            <img src="../assets/image/image-avatar.png" alt="John" />
           </v-avatar>
         </v-btn>
       </v-toolbar>
