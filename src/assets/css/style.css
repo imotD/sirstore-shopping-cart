@@ -16,4 +16,21 @@
   min-height: 100vh;
   padding-top: 8rem;
 }
+
+.home__description .label {
+  text-transform: uppercase;
+  color: #ff7d1a;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.home__description h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.btn-disabled {
+  pointer-events: none;
+}
 /*# sourceMappingURL=style.css.map */

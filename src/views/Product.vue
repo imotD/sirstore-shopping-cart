@@ -3,7 +3,7 @@
     <Navbar />
     <section class="home">
       <v-container>
-        <v-row>
+        <v-row align="center">
           <v-col cols="6">
             <v-row>
               <v-col cols="12">
@@ -41,18 +41,67 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="6">
-            <p>{{ title }}</p>
+          <v-col cols="6" class="home__description">
+            <p class="label">{{ title }}</p>
             <h1>{{ product }}</h1>
-            <p>
+            <br />
+            <p class="text--secondary">
               These low-profile sneakers are your perfect casual wear companion.
               Featuring a durable rubber outer sole, they’ll withstand
-              everything the weather can offer
+              everything the weather can offer.
             </p>
-            <p>50%</p>
-            <p>$125.00</p>
-            <p class="text--secondary text-decoration-line-through">$250.00</p>
-            <v-btn color="warning">Add to cart</v-btn>
+            <div class="d-flex align-center">
+              <div>
+                <h1 class="font-weight-bold text-h4">$125.00</h1>
+              </div>
+              <div>
+                <v-chip
+                  class="
+                    ml-3
+                    orange
+                    lighten-4
+                    orange--text
+                    font-weight-bold
+                    text-button
+                  "
+                  label
+                >
+                  50%
+                </v-chip>
+              </div>
+            </div>
+
+            <p
+              class="
+                text-subtitle-1 text--secondary text-decoration-line-through
+                font-weight-bold
+              "
+            >
+              $ 250.00
+            </p>
+            <div class="d-flex">
+              <div>
+                <v-btn-toggle borderless dense>
+                  <v-btn>
+                    <v-icon small color="orange darken-4">mdi-minus</v-icon>
+                  </v-btn>
+                  <v-btn class="font-weight-bold btn-disabled"> 0 </v-btn>
+                  <v-btn>
+                    <v-icon small color="orange darken-4">mdi-plus</v-icon>
+                  </v-btn>
+                </v-btn-toggle>
+              </div>
+              <div class="ml-3">
+                <v-btn
+                  color="orange darken-2"
+                  dark
+                  class="font-weight-bold text-capitalize"
+                >
+                  <v-icon small class="pr-2">mdi-cart</v-icon>
+                  Add to cart
+                </v-btn>
+              </div>
+            </div>
           </v-col>
         </v-row>
       </v-container>
