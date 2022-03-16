@@ -7,11 +7,7 @@
           <v-col cols="6">
             <v-row>
               <v-col cols="12">
-                <v-card
-                  to="/product/12"
-                  class="rounded-lg ma-auto"
-                  max-width="400"
-                >
+                <v-card class="rounded-lg ma-auto" max-width="400">
                   <v-img
                     :src="image"
                     height="400"
@@ -29,12 +25,13 @@
                 :key="i.imageId"
               >
                 <v-card
-                  to="/product/12"
+                  :class="i == selectImage ? 'active__card' : ''"
                   class="rounded-lg ma-auto"
                   max-width="400"
                   @mouseover="updateProduct(i)"
                 >
                   <v-img
+                    :class="i == selectImage ? 'active__img' : ''"
                     :src="require(`../assets/image/${image.imageThumbnail}`)"
                   ></v-img>
                 </v-card>

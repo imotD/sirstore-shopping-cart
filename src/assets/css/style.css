@@ -33,4 +33,13 @@
 .btn-disabled {
   pointer-events: none;
 }
+
+.active__card {
+  border: 2px solid #ff7d1a !important;
+  background-color: #ffede0 !important;
+}
+
+.active__img {
+  opacity: 0.5 !important;
+}
 /*# sourceMappingURL=style.css.map */

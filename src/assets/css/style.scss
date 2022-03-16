@@ -49,3 +49,13 @@ $white: hsl(0, 0%, 100%);
 .btn-disabled {
     pointer-events: none;
 }
+
+.active {
+    &__card {
+        border: 2px solid $orange !important;
+        background-color: $orange-pale !important;
+    }
+    &__img {
+        opacity: 0.5 !important;
+    }
+}
